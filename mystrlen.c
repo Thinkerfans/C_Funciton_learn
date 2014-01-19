@@ -16,8 +16,17 @@ int mystrlen2(const char * s){
 		tem++;
 	return tem-s;
 }
+int mystrlen3(const char *s)
+{
+	if(*s)
+		return mystrlen(++s)+1;
+	else
+		return 0;
+
+}
 int main(){
 	char * s = "12";
 	printf("len=%d",mystrlen(s));
+	printf("len=%d",mystrlen3(s));
 	
 }
