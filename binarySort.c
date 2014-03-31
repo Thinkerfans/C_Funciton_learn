@@ -4,8 +4,6 @@ int binarySort(int array[] ,int len,int value){
 	int low,high,middle;
 	low = middle =0;
 	high = len-1;
-	printf("high =%d",high);
-	printf("high =%d",array[high]);
 	while(low <= high){
 		middle = (low+high)/2;
 		if(value == array[middle])
